@@ -1,10 +1,14 @@
 import { useRef, useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
-import { MathUtils } from "three";
+import { MathUtils, Mesh } from "three";
 import { useGLTF } from "@react-three/drei";
 
-export const Banana = ({ z }) => {
-  const ref = useRef();
+type BananaProps = {
+  z: number;
+};
+
+export const Banana = ({ z }: BananaProps) => {
+  const ref = useRef<Mesh>(null!);
 
   const { viewport, camera } = useThree();
   const { width, height } = viewport.getCurrentViewport(camera, [0, 0, z]);
