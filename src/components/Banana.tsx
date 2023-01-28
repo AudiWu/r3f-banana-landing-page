@@ -38,6 +38,7 @@ export const Banana = ({ z }: BananaProps) => {
   return (
     <mesh
       ref={ref}
+      //@ts-ignore
       geometry={nodes.banana.geometry}
       material={materials.skin}
       rotation={[-Math.PI / 2, 0, 0]}
