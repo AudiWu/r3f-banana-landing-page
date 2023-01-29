@@ -7,7 +7,7 @@ type BananaProps = {
   z: number;
 };
 
-export const Banana = ({ z }: BananaProps) => {
+export const BananaModel = ({ z }: BananaProps) => {
   const ref = useRef<Mesh>(null!);
 
   const { viewport, camera } = useThree();
