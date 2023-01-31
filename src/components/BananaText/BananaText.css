@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 5%;
   gap: 8px;
 }
 
@@ -11,12 +14,14 @@
   margin: 0;
   text-align: center;
   font-size: 12rem;
+  font-family: 'Roboto', monospace;
   color: #b37d2d;
 }
 
 .subtitle {
   margin: 0;
-  font-size: 8rem;
+  font-size: 4px;
+  font-family: 'Roboto', monospace;
   text-align: center;
   color: #fee766;
 }
