@@ -10,8 +10,8 @@
     "deploy": "vercel --prod"
   },
   "dependencies": {
-    "@react-three/drei": "^9.56.1",
-    "@react-three/fiber": "^8.10.1",
+    "@react-three/drei": "^9.74.8",
+    "@react-three/fiber": "^8.13.1",
     "@react-three/postprocessing": "^2.7.0",
     "@types/three": "^0.148.1",
     "react": "^18.2.0",
