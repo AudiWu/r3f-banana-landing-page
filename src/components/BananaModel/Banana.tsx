@@ -12,6 +12,9 @@ export const BananaModel = ({ z }: BananaProps) => {
 
   const { viewport, camera } = useThree();
   const { width, height } = viewport.getCurrentViewport(camera, [0, 0, z]);
+
+  // current solution for nodes and material undefined
+  // @ts-expect-error
   const { nodes, materials } = useGLTF("/banana-transformed.glb");
 
   const [data] = useState({
