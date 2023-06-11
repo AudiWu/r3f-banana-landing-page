@@ -16,7 +16,7 @@ const App = ({ count = 100, depth = 80 }) => {
         {Array.from({ length: count }, (_, i) => (
           <BananaModel key={i} z={(-i / count) * depth - 20} />
         ))}
-        <Environment preset="sunset" />
+        {/* <Environment preset="sunset" /> */}
         <EffectComposer>
           <DepthOfField
             target={[0, 0, depth / 2]}
